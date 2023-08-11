@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSafari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <!--
+        RMIT University Vietnam
+        Course: COSC2430 Web Programming
+        Semester: 2023A
+        Assessment: Assignment 1
+        Author: Le Tuan Kiet
+        ID: 3965654
+        Acknowledgement: BookSafari logo: Image generated using Tailor Brands.
+
+Images: Fahasa (n.d.) Book images [book], Fahasa website, accessed 10 August, 2023. https://fahasa.com
+
+Text in About Us, Terms and Privacy pages: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 10 August, 2023. https://chat.openai.com
+
+Book description: Google (2023)
+    -->
+</head>
+<body>
+    <!--Main Header Section-->
+    <header>
+        <div class="bookstorelogo">
+            <img src="images/bookstore_logo.jpg" alt="bookstore logo">
+        </div>
+        <label class="mobile-nav-icon" for="menu">☰</label>        
+        <nav class="header-nav"> 
+            <input type="checkbox" id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fiction_sub-category.html">Fiction</a></li>
+                <li><a href="children_sub-category.html">Children's Books</a></li>
+                <li><a href="business_sub-category.html">Business, Finance & Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Header Section-->
+
+    <!--Main Section-->
+    <main>
+        <div class="contact_us_form">
+            <form action="home.html">
+                <fieldset>
+                    <!-- Heading -->
+                    <legend class="infor">
+                        <h1>Contact Us</h1>
+                    </legend>
+                    <!-- Select box -->
+                    <label for="purpose">Purpose:</label>
+                    <select name="purpose" id="purpose" required>
+                        <option value="#" disabled selected>- What would you like to do? -</option>
+                        <option value="sell">I want to sell books.</option>
+                        <option value="buy">I want to buy books.</option>
+                    </select>
+                    <br>
+                    <!--Name input -->
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <!-- Email input -->
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <!-- Phone number input -->
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <br>
+                    <!-- Contact option checkbox -->
+                    <label for="contact_option">Contact:</label>
+                    <input type="checkbox" name="contact_option" id="contact_option" value="email">By email
+                    <input type="checkbox" name="contact_option" id="contact_option" value="phone">By phone number
+                    <br>
+                    <!-- Newsletter radio -->
+                    <label for="newsletter">Newsletter:</label>
+                    <input type="radio" name="newsletter" value="yes" checked> Yes
+                    <input type="radio" name="newsletter" value="no"> No
+                    <br>
+                    <!-- Extra notes -->
+                    <label for="note">Notes:</label>
+                    <textarea name="note" id="note" cols="10" rows="2"></textarea>
+                </fieldset>
+                <!-- button -->
+                <div class="form_button">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--Main Section-->
+    <br>
+    <!--Main Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/foot_nav/about_us.html">About Us</a></li>
+                    <li><a href="/foot_nav/privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="/foot_nav/term.html">Terms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <p>Make by Kit with love ❤️</p>
+                <p>All rights reserved. © 2023 BookSafari.</p>
+            </nav>
+            <div class="footer-social">
+                <p>Connect with us:</p>
+                <br>
+                <a href=""><img src="/images/social/facebook (1).png" alt="facebook"></a>
+                <a href=""><img src="/images/social/instagram (1).png" alt="instagram"></a>
+                <a href=""><img src="/images/social/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <!--Main Footer Section-->
+</body>
+</html>

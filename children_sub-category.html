@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSafari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <!--
+        RMIT University Vietnam
+        Course: COSC2430 Web Programming
+        Semester: 2023A
+        Assessment: Assignment 1
+        Author: Le Tuan Kiet
+        ID: 3965654
+        Acknowledgement: BookSafari logo: Image generated using Tailor Brands.
+
+Images: Fahasa (n.d.) Book images [book], Fahasa website, accessed 10 August, 2023. https://fahasa.com
+
+Text in About Us, Terms and Privacy pages: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 10 August, 2023. https://chat.openai.com
+
+Book description: Google (2023)
+    -->
+</head>
+<body>
+    <!--Main Header Section-->
+    <header>
+        <div class="bookstorelogo">
+            <img src="images/bookstore_logo.jpg" alt="bookstore logo">
+        </div>
+        <label class="mobile-nav-icon" for="menu">☰</label>        
+        <nav class="header-nav"> 
+            <input type="checkbox" id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fiction_sub-category.html">Fiction</a></li>
+                <li><a href="children_sub-category.html">Children's Books</a></li>
+                <li><a href="business_sub-category.html">Business, Finance & Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Header Section-->
+
+    <!--Main Section-->
+    <main>
+        <section class="category">
+            <a href="/sub_category/education.html"><h2>Education</h2></a>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/education1_detail.html"><img src="images/children's book/education/education1.jpg" alt="Education books"></a>
+                    <p>Physics for Beginners</p>
+                    <p class="price">$8</p>
+                </div>
+                <div>
+                    <a href="book_detail/education2_detail.html"><img src="images/children's book/education/education2.jpg" alt="Education books"></a>
+                    <p>Learning How to Learn</p>
+                    <p class="price">$5</p>
+                </div>
+                <div>
+                    <a href="book_detail/education3_detail.html"><img src="images/children's book/education/education3.jpg" alt="Education books"></a>
+                    <p>All The Maths You Need To Know By Age 7</p>
+                    <p class="price">$12</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="category">
+            <a href="/sub_category/reference.html"><h2>Reference</h2></a>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/reference1_detail.html"><img src="images/children's book/reference/reference1.jpg" alt="Reference books"></a>
+                    <p>Human Body A Children's Encyclopedia</p>
+                    <p class="price">$20</p>
+                </div>
+                <div>
+                    <a href="book_detail/reference2_detail.html"><img src="images/children's book/reference/reference2.jpg" alt="Reference books"></a>
+                    <p>Countries Of The World: Our World In Pictures</p>
+                    <p class="price">$13</p>
+                </div>
+                <div>
+                    <a href="book_detail/reference3_detail.html"><img src="images/children's book/reference/reference3.jpg" alt="Reference books"></a>
+                    <p>Animal Knowledge Genius!</p>
+                    <p class="price">$18</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main Section-->
+    <br>
+    <!--Main Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/foot_nav/about_us.html">About Us</a></li>
+                    <li><a href="/foot_nav/privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="/foot_nav/term.html">Terms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <p>Make by Kit with love ❤️</p>
+                <p>All rights reserved. © 2023 BookSafari.</p>
+            </nav>
+            <div class="footer-social">
+                <p>Connect with us:</p>
+                <br>
+                <a href=""><img src="/images/social/facebook (1).png" alt="facebook"></a>
+                <a href=""><img src="/images/social/instagram (1).png" alt="instagram"></a>
+                <a href=""><img src="/images/social/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <!--Main Footer Section-->
+</body>
+</html>

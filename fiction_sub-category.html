@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSafari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <!--
+        RMIT University Vietnam
+        Course: COSC2430 Web Programming
+        Semester: 2023A
+        Assessment: Assignment 1
+        Author: Le Tuan Kiet
+        ID: 3965654
+        Acknowledgement: BookSafari logo: Image generated using Tailor Brands.
+
+Images: Fahasa (n.d.) Book images [book], Fahasa website, accessed 10 August, 2023. https://fahasa.com
+
+Text in About Us, Terms and Privacy pages: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 10 August, 2023. https://chat.openai.com
+
+Book description: Google (2023)
+    -->
+</head>
+<body>
+    <!--Main Header Section-->
+    <header>
+        <div class="bookstorelogo">
+            <img src="images/bookstore_logo.jpg" alt="bookstore logo">
+        </div>
+        <label class="mobile-nav-icon" for="menu">☰</label>        
+        <nav class="header-nav"> 
+            <input type="checkbox" id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fiction_sub-category.html">Fiction</a></li>
+                <li><a href="children_sub-category.html">Children's Books</a></li>
+                <li><a href="business_sub-category.html">Business, Finance & Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Header Section-->
+
+    <!--Main Section-->
+    <main>
+        <section class="category">
+            <a href="/sub_category/adventure.html"><h2>Adventure</h2></a>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/adventure1_detail.html"><img src="images/fiction/adventure/adventure1.jpg" alt="Adventure books"></a>
+                    <p>Operation Pedestal</p>
+                    <p class="price">$7</p>
+                </div>
+                <div>
+                    <a href="book_detail/adventure2_detail.html"><img src="images/fiction/adventure/adventure2.jpg" alt="Adventure books"></a>
+                    <p>Lean Fall Stand</p>
+                    <p class="price">$6</p>
+                </div>
+                <div>
+                    <a href="book_detail/adventure3_detail.html"><img src="images/fiction/adventure/adventure3.jpg" alt="Adventure books"></a>
+                    <p>Theodore Boone: The Accomplice</p>
+                    <p class="price">$6</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="category">
+            <a href="/sub_category/thrillers.html"><h2>Thrillers</h2></a>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/thrillers1_detail.html"><img src="images/fiction/thrillers/thrillers1.jpg" alt="Thriller books"></a>
+                    <p>Our Crooked Hearts</p>
+                    <p class="price">$10</p>
+                </div>
+                <div>
+                    <a href="book_detail/thrillers2_detail.html"><img src="images/fiction/thrillers/thrillers2.jpg" alt="Thriller books"></a>
+                    <p>The Hazel Wood</p>
+                    <p class="price">$8</p>
+                </div>
+                <div>
+                    <a href="book_detail/thrillers3_detail.html"><img src="images/fiction/thrillers/thrillers3.jpg" alt="Thriller books"></a>
+                    <p>The Night Agent</p>
+                    <p class="price">$15</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main Section-->
+    <br>
+    <!--Main Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/foot_nav/about_us.html">About Us</a></li>
+                    <li><a href="/foot_nav/privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="/foot_nav/term.html">Terms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <p>Make by Kit with love ❤️</p>
+                <p>All rights reserved. © 2023 BookSafari.</p>
+            </nav>
+            <div class="footer-social">
+                <p>Connect with us:</p>
+                <br>
+                <a href=""><img src="/images/social/facebook (1).png" alt="facebook"></a>
+                <a href=""><img src="/images/social/instagram (1).png" alt="instagram"></a>
+                <a href=""><img src="/images/social/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <!--Main Footer Section-->
+</body>
+</html>

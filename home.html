@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSafari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <!--
+        RMIT University Vietnam
+        Course: COSC2430 Web Programming
+        Semester: 2023A
+        Assessment: Assignment 1
+        Author: Le Tuan Kiet
+        ID: 3965654
+        Acknowledgement: BookSafari logo: Image generated using Tailor Brands.
+
+Images: Fahasa (n.d.) Book images [book], Fahasa website, accessed 10 August, 2023. https://fahasa.com
+
+Text in About Us, Terms and Privacy pages: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 10 August, 2023. https://chat.openai.com
+
+Book description: Google (2023)
+    -->
+</head>
+<body>
+    <!--Main Header Section-->
+    <header>
+        <div class="bookstorelogo">
+            <img src="images/bookstore_logo.jpg" alt="bookstore logo">
+        </div>
+        <label class="mobile-nav-icon" for="menu">☰</label>        
+        <nav class="header-nav"> 
+            <input type="checkbox" id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fiction_sub-category.html">Fiction</a></li>
+                <li><a href="children_sub-category.html">Children's Books</a></li>
+                <li><a href="business_sub-category.html">Business, Finance & Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Header Section-->
+
+    <!--Main Section-->
+    <main>
+        <div class="video">
+            <video autoplay loop muted>
+                <source src="/images/book_-_84006 (540p).mp4">
+            </video>
+        </div>
+        <section class="category">
+            <h2><a href="fiction_sub-category.html">Fiction</a></h2>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/fiction1_detail.html"><img src="images/fiction/science fiction/sciencefiction1.jpg" alt="Fiction books"></a>
+                    <p>The House Of the Scorpion</p>
+                    <p class="price">$10</p>
+                </div>
+                <div>
+                    <a href="book_detail/fiction2_detail.html"><img src="images/fiction/science fiction/sciencefiction2.jpg" alt="Fiction books"></a>
+                    <p>Gearbreakers 2: Godslayers</p>
+                    <p class="price">$20</p>
+                </div>
+                <div>
+                    <a href="book_detail/fiction3_detail.html"><img src="images/fiction/science fiction/sciencefiction3.jpg" alt="Fiction books"></a>
+                    <p>Matilda: Film Tie-in</p>
+                    <p class="price">$17</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="category">
+            <h2><a href="children_sub-category.html">Children's Books</a></h2>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/children1_detail.html"><img src="images/children's book/comics/comics1.jpg" alt="Comics"></a>
+                    <p>Lost and Found</p>
+                    <p class="price">$5</p>
+                </div>
+                <div>
+                    <a href="book_detail/children2_detail.html"><img src="images/children's book/comics/comics2.jpg" alt="Comics"></a>
+                    <p>Whale tells a tale</p>
+                    <p class="price">$4.5</p>
+                </div>
+                <div>
+                    <a href="book_detail/children3_detail.html"><img src="images/children's book/comics/comics3.jpg" alt="Comics"></a>
+                    <p>I Love You Brighter Than The Stars</p>
+                    <p class="price">$5</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="category">
+            <h2><a href="business_sub-category.html">Business, Finance & Management</a></h2>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/business1_detail.html"><img src="images/Business, Finance & Management/Business & Management/b&m1.jpg" alt="Business Books"></a>
+                    <p>Principles: Your Guilded Journal</p>
+                    <p class="price">$10</p>
+                </div>
+                <div>
+                    <a href="book_detail/business2_detail.html"><img src="images/Business, Finance & Management/Business & Management/b&m2.jpg" alt="Business Books"></a>
+                    <p>No Rules Rules</p>
+                    <p class="price">$15</p>
+                </div>
+                <div>
+                    <a href="book_detail/business3_detail.html"><img src="images/Business, Finance & Management/Business & Management/b&m3.jpg" alt="Business Books"></a>
+                    <p>Whatever You Think Think The Opposite</p>
+                    <p class="price">$18</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main Section-->
+    <br>
+    <!--Main Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/foot_nav/about_us.html">About Us</a></li>
+                    <li><a href="/foot_nav/privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="/foot_nav/term.html">Terms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <p>Make by Kit with love ❤️</p>
+                <p>All rights reserved. © 2023 BookSafari.</p>
+            </nav>
+            <div class="footer-social">
+                <p>Connect with us:</p>
+                <br>
+                <a href=""><img src="/images/social/facebook (1).png" alt="facebook"></a>
+                <a href=""><img src="/images/social/instagram (1).png" alt="instagram"></a>
+                <a href=""><img src="/images/social/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <!--Main Footer Section-->
+</body>
+</html>

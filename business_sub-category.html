@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSafari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <!--
+        RMIT University Vietnam
+        Course: COSC2430 Web Programming
+        Semester: 2023A
+        Assessment: Assignment 1
+        Author: Le Tuan Kiet
+        ID: 3965654
+        Acknowledgement: BookSafari logo: Image generated using Tailor Brands.
+
+Images: Fahasa (n.d.) Book images [book], Fahasa website, accessed 10 August, 2023. https://fahasa.com
+
+Text in About Us, Terms and Privacy pages: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 10 August, 2023. https://chat.openai.com
+
+Book description: Google (2023)
+    -->
+</head>
+<body>
+    <!--Main Header Section-->
+    <header>
+        <div class="bookstorelogo">
+            <img src="images/bookstore_logo.jpg" alt="bookstore logo">
+        </div>
+        <label class="mobile-nav-icon" for="menu">☰</label>        
+        <nav class="header-nav"> 
+            <input type="checkbox" id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fiction_sub-category.html">Fiction</a></li>
+                <li><a href="children_sub-category.html">Children's Books</a></li>
+                <li><a href="business_sub-category.html">Business, Finance & Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Header Section-->
+
+    <!--Main Section-->
+    <main>
+        <section class="category">
+            <a href="/sub_category/economics.html"><h2>Economics</h2></a>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/economic1_detail.html"><img src="images/Business, Finance & Management/Economics/economics1.jpg" alt="Economics books"></a>
+                    <p>A Rabble of Dead Money</p>
+                    <p class="price">$17</p>
+                </div>
+                <div>
+                    <a href="book_detail/econimic2_detail.html"><img src="images/Business, Finance & Management/Economics/economics2.jpg" alt="Economics books"></a>
+                    <p>Don't Trust Your Gut</p>
+                    <p class="price">$12</p>
+                </div>
+                <div class="fiction3">
+                    <a href="book_detail/economic3_detail.html"><img src="images/Business, Finance & Management/Economics/economics3.jpg" alt="Economics books"></a>
+                    <p>Invisible Influence</p>
+                    <p class="price">$16</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="category">
+            <a href="/sub_category/law.html"><h2>Law</h2></a>
+            <div class="booklist">
+                <div>
+                    <a href="book_detail/law1_detail.html"><img src="images/Business, Finance & Management/Law/law1.jpg" alt="Law books"></a>
+                    <p>Negotiating of Impossible</p>
+                    <p class="price">$17</p>
+                </div>
+                <div>
+                    <a href="book_detail/law2_detail.html"><img src="images/Business, Finance & Management/Law/law2.jpg" alt="Law books"></a>
+                    <p>The New Jim Crow</p>
+                    <p class="price">$21</p>
+                </div>
+                <div>
+                    <a href="book_detail/law3_detail.html"><img src="images/Business, Finance & Management/Law/law3.jpg" alt="Law books"></a>
+                    <p>The Law Book</p>
+                    <p class="price">$23</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main Section-->
+    <br>
+    <!--Main Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/foot_nav/about_us.html">About Us</a></li>
+                    <li><a href="/foot_nav/privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="/foot_nav/term.html">Terms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <p>Make by Kit with love ❤️</p>
+                <p>All rights reserved. © 2023 BookSafari.</p>
+            </nav>
+            <div class="footer-social">
+                <p>Connect with us:</p>
+                <br>
+                <a href=""><img src="/images/social/facebook (1).png" alt="facebook"></a>
+                <a href=""><img src="/images/social/instagram (1).png" alt="instagram"></a>
+                <a href=""><img src="/images/social/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <!--Main Footer Section-->
+</body>
+</html>

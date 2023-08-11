@@ -1,0 +1,422 @@
+/* RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Le Tuan Kiet
+    ID: 3965654
+    Acknowledgement: BookSafari logo: Image generated using Tailor Brands.
+
+Images: Fahasa (n.d.) Book images [book], Fahasa website, accessed 10 August, 2023. https://fahasa.com
+
+Text in About Us, Terms and Privacy pages: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 10 August, 2023. https://chat.openai.com
+
+Book description: Google (2023) */
+    
+
+* {
+    font-family: sans-serif;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+#menu {
+    display: none;
+}
+
+/* video */
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.video video {
+    width: 90%;
+}
+
+/* hamburger icon */
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #b1c3c2;
+    display: none;
+}
+
+
+/* mobile devices */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+        align-content: flex-start;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .header-nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu:checked + ul li {
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .detail_container .small_images{
+        display: flex;
+        flex-direction: row !important;
+    }
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #e5f2f1;
+}
+
+main a {
+    color: black;
+}
+
+hr {
+    width: 50%;
+}
+
+/* bookstore logo */
+.bookstorelogo {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+}
+
+.bookstorelogo img {
+    width: 150px;
+}
+
+header {
+    background-color: #679995;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li {
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.header-nav a {
+    padding: 0 10px;
+    color: #243835;
+    transition: 0.5s;
+}
+
+.header-nav a:hover {
+    color: white;
+    text-decoration: underline white ;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.detail_container {
+    display: flex;
+}
+
+/* bread crumb */
+.breadcrumb h4 {
+    text-align: center;
+}
+
+/* large book image */
+.detail_container .large_image {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
+.detail_container .large_image img {
+    width: 400px;
+}
+
+/* 3 small book images */
+.detail_container .small_images {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail_container .small_images img {
+    width: 75px;
+    display: flex;
+    border: #404847 solid 1px;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+/* add to cart button */
+.detail_container .price_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail_container .add_to_cart .button {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #404847;
+}
+
+.detail_container .add_to_cart .button:hover {
+    background-color: #a3c8c2;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+/* book description */
+.book_name, .description {
+    margin: 20px;
+}
+
+.category {
+    margin-bottom: 60px;
+}
+
+.category .booklist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category .booklist img {
+   width: 300px;
+}
+
+.category .booklist p {
+    text-align: center
+}
+.category .booklist div {
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.category .booklist .price {
+    font-weight: bold;
+}
+
+.category .booklist div:hover {
+    border: 1px solid #404847;
+    padding: 14px;
+}
+
+.related_books .category .booklist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.related_books .category .booklist img {
+   width: 300px;
+}
+
+.related_books .category .booklist p {
+    text-align: center
+}
+
+.related_books .category .booklist div {
+    padding: 15px;
+}
+
+.related_books .category .booklist div:hover {
+    border: 1px solid #404847;
+    padding: 14px;
+}
+
+footer {
+    background-color: #679995;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-container .footer-nav {
+    display: inline-block;
+    margin: 0 200px;
+}
+
+.footer-container .footer-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-container .footer-nav a {
+    color: #243835;
+    margin: 20px;
+}
+
+.footer-container .footer-nav p {
+    text-align: center;
+}
+
+.footer-container .footer-nav a:hover {
+    color: white;
+    text-decoration: underline;
+    transition: 0.5s;   
+}
+
+.footer-container .footer-social {
+    display: inline-block;
+}
+
+.footer-container .footer-social img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer-container .footer-social p {
+    font-size: 20px;
+}
+
+.about_us-privacy_policy-terms {
+    color: #243835;
+    border: 3px solid #243835;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 50px 75px;
+    padding: 20px;
+}
+
+.about_us-privacy_policy-terms h2 {
+    text-align: left;
+}
+
+.about_us-privacy_policy-terms hr {
+    width: 75%;
+}
+
+.contact_us_form {
+    background-color: #679995;
+    color: #243835;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 0px 20px 10px 20px;
+}
+
+@media screen and (min-width: 769px) {
+    .contact_us_form {
+        width: 50%;
+    }
+
+    .contact_us_form label {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .contact_us_form input[type="text"],
+    .contact_us_form input[type="email"],
+    .contact_us_form input[type="tel"],
+    .contact_us_form textarea,
+    .contact_us_form select {
+        width: 65%;
+    }
+}
+
+.contact_us_form legend {
+    text-align: center;
+} 
+
+.contact_us_form fieldset {
+    border-radius: 10px;
+}
+
+.contact_us_form input[type="text"],
+.contact_us_form input[type="email"],
+.contact_us_form input[type="tel"],
+.contact_us_form text,
+.contact_us_form textarea,
+.contact_us_form select {
+    margin: 20px;
+    vertical-align: middle;
+}
+
+.contact_us_form input[type="text"],
+.contact_us_form input[type="email"],
+.contact_us_form input[type="tel"],
+.contact_us_form textarea,
+.contact_us_form select {
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.contact_us_form .form_button {
+    text-align: center;
+}
+
+.contact_us_form .form_button input[type="submit"],
+.contact_us_form .form_button input[type="reset"]{
+    background-color: #243835;
+    color: #679995;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.contact_us_form .form_button input[type="submit"]:hover,
+.contact_us_form .form_button input[type="reset"]:hover {
+    background-color: #679995;
+    color: #243835;
+    border: 2px solid #243835;
+}
